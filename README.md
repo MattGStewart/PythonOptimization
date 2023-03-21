@@ -1,5 +1,17 @@
-Code Condenser
-Code Condenser is a Python script that condenses and optimizes Python code to make it more concise and efficient. It does this by using abstract syntax trees (ASTs) to analyze and transform the code.
+Documentation
+This script provides a function to optimize and condense Python code. The OptimizationTransformer class defines a series of methods to optimize different types of nodes in the abstract syntax tree (AST) of the code, such as variable names, constants, binary operations, string literals, comments, and imports. The condense_code() function takes a string of Python code as input, optimizes it using the OptimizationTransformer, and writes the condensed code to a file specified by the write_to_file argument.
+
+The condense_file() function reads a Python file specified by the filepath argument, passes its content to condense_code(), and writes the optimized code to a new file with the suffix .condensed.
+
+The condense_script() function condenses a string or file of Python code depending on the type of the code_or_file argument. If it is a string, it is passed directly to condense_code(). If it is a file object, its content is read and passed to condense_code(). The optional write_to_file argument specifies the file name to write the condensed code to.
+
+All functions in this script accept file paths and file objects as input, in addition to string inputs.
+
+______________________________________________________________________________________________________________________________________________
+
+Python Optimization & Condensor Script:
+
+This is a Python script that condenses and optimizes Python code to make it more concise and efficient. It does this by using abstract syntax trees (ASTs) to analyze and transform the code.
 
 Usage
 The script can be used in two ways: with a string of code or with a file containing code.
